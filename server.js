@@ -121,7 +121,7 @@ app.delete('/products/:id', async(req,res)=>{
 })
 
 mongoose.set("strictQuery",false);      //so that it doesnt show a error log in the console(terminal)
-mongoose.connect("mongodb+srv://esha272103:9KcVdW5A49fk82wJ@cluster0.kwihcs2.mongodb.net/")
+mongoose.connect("your-mongoose-uri-here")              //connect with your mongoose uri and pwd
 .then(()=>{
     console.log('connected to DB')
     app.listen(5000, ()=>{
